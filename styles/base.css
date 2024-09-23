@@ -133,6 +133,7 @@ section.card h2 {
 }
 
 a.resources-item {
+  transition: all 0.3s ease-in;
   border: solid 2px var(--bg-dark);
   border-radius: 20px;
   display: flex;
@@ -145,6 +146,12 @@ a.resources-item {
   font-weight: var(--font-weight-semibold);
   box-shadow: 8px 10px var(--bg-secondary);
 }
+
+a.resources-item:hover {
+  background: var(--bg-secondary);
+  box-shadow: 8px 10px var(--bg-tertiary);
+}
+
 footer {
   background-color: var(--bg-dark);
   color: #fff;
