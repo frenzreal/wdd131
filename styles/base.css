@@ -92,6 +92,10 @@ section.card h2 {
   text-align: center;
 }
 
+section.card img {
+  box-shadow: 15px 15px var(--bg-secondary);
+}
+
 .aboutme-personal {
   display: flex;
   align-items: center;
