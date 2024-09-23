@@ -3,9 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD131</title>
+    <meta name="author" content="Florence Real" />
+    <meta
+      name="description"
+      content='"WDD 131 - Dynamic Web Fundamentals" by Florence Real aims to demonstrate
+      the application of HTML, CSS, and JS in the design and development of a
+      home page.'
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Florence Real</title>
   </head>
   <body>
-    <h1>WDD 131 - Real</h1>
+    <header>
+      <h1>WDD 131 - Dynamic Web Fundamentals - Florence Real</h1>
+      <nav>
+        <a href="https://www.linkedin.com/in/frenzreal/">LinkedIn</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/122?lang=eng&id=p7#p7"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+    <main>
+      <section class="card">
+        <h2>About Me</h2>
+        <div class="aboutme-personal">
+          <p>
+            My name is Florence Real, Frenz for short. I was born and raised in
+            the Philippines. I'm a BYU-Idaho Online student studying Applied
+            Technology. I love playing musical instruments and singing. My
+            favorite instrument to play is the piano. I also like playing video
+            games during my free time.
+          </p>
+          <img src="images/florence-real-sm.jpg" alt="florence real picture" />
+        </div>
+        <div class="aboutme-location">
+          <img src="images/philippine-flag.png" alt="philippine flag" />
+          <p>
+            The Philippines has been broadly categorized into 3 major divisions,
+            namely Luzon, Visayas, and Mindanao. It consists of more than 7000
+            islands and only about 2000 islands are inhabited. The Philippines
+            has a diverse culture due to the colonizations of other countries
+            such as Spain, USA, Japan, etc.
+          </p>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <div class="resources">
+          <a href="https://css-tricks.com/" class="resources-item"
+            >CSS Tricks</a
+          >
+          <a href="https://www.w3schools.com/" class="resources-item"
+            >W3 Schools</a
+          >
+          <a href="https://www.udemy.com/" class="resources-item">Udemy</a>
+          <a href="https://coolors.co/" class="resources-item">Coolors</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span>. Florence Real. Philippines.</p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>
