@@ -162,3 +162,33 @@ footer {
   font-weight: var(--font-weight-semibold);
   line-height: 1.7;
 }
+
+@media screen and (max-width: 1023px) {
+  section.card:first-child {
+    grid-column: 1/4;
+  }
+
+  section.card:last-child {
+    grid-column: 1/4;
+  }
+
+  .resources {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .aboutme-personal {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .aboutme-location {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  a.resources-item {
+    width: 100%;
+  }
+}
